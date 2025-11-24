@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body {
+    background-image: url(hydrengea.jpg);
+    background-position: center no-repeat;
+    
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    background: #2c3e50;
+    padding: 15px 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Nav Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 6px 12px;
+    border-radius: 5px;
+}
+
+/* Active link highlight */
+.nav-links li a.active,
+.nav-links li a:hover {
+    background: #1abc9c;
+}
+
+/* Hamburger Button */
+.menu-icon {
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Responsive Style */
+@media (max-width: 768px) {
+
+    .nav-links {
+        position: absolute;
+        top: 65px;
+        right: -100%;
+        background: #34495e;
+        width: 200px;
+        height: auto;
+        flex-direction: column;
+        padding: 20px;
+        border-radius: 8px;
+        transition: 0.3s;
+    }
+
+    .nav-links.open {
+        right: 10px;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+
+
