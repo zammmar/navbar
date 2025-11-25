@@ -8,6 +8,8 @@
 body {
     background-image: url(hydrengea.jpg);
     background-position: center no-repeat;
+    background-clip: content-box;
+    background-size: cover;
     
 }
 
